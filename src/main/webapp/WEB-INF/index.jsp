@@ -25,7 +25,7 @@
                 <td>${solution.getDescription()}</td>
                 <td>${solution.getUserId()}</td>
                 <td>${solution.getCreated()}</td>
-                <td></td>
+                <td><a href="/solution/details?id=${solution.getId()}">Details</a></td>
             </tr>
         </c:forEach>
     </table>
