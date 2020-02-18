@@ -21,7 +21,7 @@
     <c:forEach items="${groups}" var="group">
         <tr>
             <td>${group.getName()}</td>
-            <td><a href="">Users</a></td>
+            <td><a href="/group/users/list?id=${group.getId()}">Users</a></td>
         </tr>
     </c:forEach>
 </table>
