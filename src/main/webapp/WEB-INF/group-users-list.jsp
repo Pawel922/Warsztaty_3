@@ -21,7 +21,7 @@
     <c:forEach items="${users}" var="user">
         <tr>
             <td>${user.getUserName()}</td>
-            <td><a href="">Details</a></td>
+            <td><a href="/user/details?id=${user.getId()}">Details</a></td>
         </tr>
     </c:forEach>
 </table>
