@@ -14,9 +14,9 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <div>
-    <p><a href="">Exercises</a></p>
-    <p><a href="/group/list">Groups</a></p>
-    <p><a href="">Users</a></p>
+    <p><a href="/admin/exercises">Exercises</a></p>
+    <p><a href="/admin/groups">Groups</a></p>
+    <p><a href="/admin/users">Users</a></p>
 </div>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>
