@@ -9,6 +9,7 @@ public class User {
     private String email;
     private String password;
     private int userGroupId;
+    private String groupName = null;
 
     public User() {}
 
@@ -39,6 +40,10 @@ public class User {
         return userGroupId;
     }
 
+    public String getGroupName() {
+        return groupName;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -57,6 +62,10 @@ public class User {
 
     public void setUserGroupId(int userGroupId) {
         this.userGroupId = userGroupId;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
     }
 
     public void hashPassword(String password) {
