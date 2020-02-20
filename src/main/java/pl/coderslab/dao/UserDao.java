@@ -16,7 +16,7 @@ public class UserDao {
     private static final String DELETE_USER_QUERY =
             "DELETE FROM users WHERE id = ?";
     private static final String FIND_ALL_USERS_QUERY =
-            "SELECT * FROM users";
+            "SELECT * FROM users ORDER BY user_groups";
     private static final String FIND_ALL_BY_GROUP_ID =
             "SELECT * FROM users WHERE user_groups = ?";
     private static final String CHECK_IF_USER_EXIST =
