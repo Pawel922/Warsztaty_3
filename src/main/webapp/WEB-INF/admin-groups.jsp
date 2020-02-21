@@ -14,7 +14,7 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <div>
-    <a href="">Add new</a>
+    <a href="/admin/groups/add">Add new</a>
 </div>
 <table>
     <tr>
