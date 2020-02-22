@@ -24,7 +24,7 @@
     <c:forEach items="${groups}" var="group">
         <tr>
             <td>${group.getName()}</td>
-            <td><a href="">Edit</a></td>
+            <td><a href="/admin/groups/edit?id=${group.getId()}">Edit</a></td>
         </tr>
     </c:forEach>
 </table>
