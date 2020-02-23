@@ -28,7 +28,7 @@
             <td>${user.getUserName()}</td>
             <td>${user.getEmail()}</td>
             <td>${user.getGroupName()}</td>
-            <td><a href="">Edit</a></td>
+            <td><a href="/admin/users/edit?id=${user.getId()}">Edit</a></td>
         </tr>
     </c:forEach>
 </table>
