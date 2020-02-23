@@ -14,7 +14,7 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <div>
-    <a href="">Add new</a>
+    <a href="/admin/exercises/add">Add new</a>
 </div>
 <table>
     <tr>
@@ -25,7 +25,7 @@
         <tr>
             <td>${exercise.getTitle()}</td>
             <td>${exercise.getDescription()}</td>
-            <td><a href="">Edit</a></td>
+            <td><a href="/admin/exercises/edit?id=${exercise.getId()}">Edit</a></td>
         </tr>
     </c:forEach>
 </table>
