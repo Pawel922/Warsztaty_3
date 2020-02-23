@@ -57,7 +57,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.hashPassword(password);
     }
 
     public void setUserGroupId(int userGroupId) {
