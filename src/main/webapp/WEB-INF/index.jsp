@@ -22,7 +22,7 @@
         </tr>
         <c:forEach items="${solutions}" var="solution">
             <tr>
-                <td>${solution.getDescription()}</td>
+                <td>${solution.getExerciseTitle()}</td>
                 <td>${solution.getUserId()}</td>
                 <td>${solution.getCreated()}</td>
                 <td><a href="/solution/details?id=${solution.getId()}">Details</a></td>
