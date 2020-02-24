@@ -1,6 +1,8 @@
 package pl.coderslab.controller;
 
+import pl.coderslab.dao.ExerciseDao;
 import pl.coderslab.dao.SolutionDao;
+import pl.coderslab.model.Exercise;
 import pl.coderslab.model.Solution;
 
 import javax.servlet.ServletException;
@@ -15,8 +17,17 @@ public class IndexServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         SolutionDao solutionDao = new SolutionDao();
+        ExerciseDao exerciseDao = new ExerciseDao();
         String numberSolutions = getServletContext().getInitParameter("number-solutions");
         Solution[] solutions = solutionDao.findRecent(Integer.parseInt(numberSolutions));
+        Exercise[] exercises = exerciseDao.findAll();
+        for(Solution solution : solutions){
+            for(Exercise exercise : exercises){
+                if(solution.getExerciseId() == exercise.getId()){
+                    solution.setExerciseTitle(exercise.getTitle());
+                }
+            }
+        }
         request.setAttribute("solutions", solutions);
         request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
     }
