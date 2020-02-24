@@ -7,6 +7,7 @@ public class Solution {
     private String updated;
     private String description;
     private int exerciseId;
+    private String exerciseTitle = null;
     private int userId;
 
     public Solution() {}
@@ -52,6 +53,10 @@ public class Solution {
         return exerciseId;
     }
 
+    public String getExerciseTitle() {
+        return exerciseTitle;
+    }
+
     public int getUserId() {
         return userId;
     }
@@ -78,6 +83,10 @@ public class Solution {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public void setExerciseTitle(String title) {
+        this.exerciseTitle = title;
     }
 
     @Override
