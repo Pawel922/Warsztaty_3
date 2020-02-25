@@ -13,13 +13,13 @@
 </head>
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
-<table>
+<table class="user-details">
     <tr>
-        <td>Name:</td>
+        <th>Name:</th>
         <td>${user.getUserName()}</td>
     </tr>
     <tr>
-        <td>Email:</td>
+        <th>Email:</th>
         <td>${user.getEmail()}</td>
     </tr>
 </table>
@@ -38,6 +38,9 @@
         </tr>
     </c:forEach>
 </table>
+<div>
+    <a href="/group/list"><button class="button">Back</button></a>
+</div>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>
 </html>

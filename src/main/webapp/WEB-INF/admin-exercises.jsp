@@ -14,12 +14,13 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <div>
-    <a href="/admin/exercises/add">Add new</a>
+    <a href="/admin/exercises/add"><button class="button">Add new</button></a>
 </div>
 <table>
     <tr>
         <th>Title</th>
         <th>Description</th>
+        <th>Action</th>
     </tr>
     <c:forEach items="${exercises}" var="exercise">
         <tr>
@@ -29,6 +30,9 @@
         </tr>
     </c:forEach>
 </table>
+<div>
+    <a href="/panelAdmin"><button class="button">Back</button></a>
+</div>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>
 </html>

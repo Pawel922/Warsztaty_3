@@ -25,6 +25,9 @@
         </tr>
     </c:forEach>
 </table>
+<div>
+    <a href="/"><button class="button">Back</button></a>
+</div>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>
 </html>

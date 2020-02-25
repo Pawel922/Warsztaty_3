@@ -13,7 +13,7 @@
 </head>
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
-<div>
+<div class="admin-list">
     <p><a href="/admin/exercises">Exercises</a></p>
     <p><a href="/admin/groups">Groups</a></p>
     <p><a href="/admin/users">Users</a></p>

@@ -14,7 +14,7 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <div>
-    <a href="/admin/groups/add">Add new</a>
+    <a href="/admin/groups/add"><button class="button">Add new</button></a>
 </div>
 <table>
     <tr>
@@ -28,6 +28,9 @@
         </tr>
     </c:forEach>
 </table>
+<div>
+    <a href="/panelAdmin"><button class="button">Back</button></a>
+</div>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>
 </html>
