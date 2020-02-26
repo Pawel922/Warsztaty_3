@@ -25,7 +25,7 @@
     <c:forEach items="${exercises}" var="exercise">
         <tr>
             <td>${exercise.getTitle()}</td>
-            <td>${exercise.getDescription()}</td>
+            <td class="description">${exercise.getDescription()}</td>
             <td><a href="/admin/exercises/edit?id=${exercise.getId()}">Edit</a></td>
         </tr>
     </c:forEach>

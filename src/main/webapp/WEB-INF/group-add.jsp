@@ -14,8 +14,16 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <form action="/admin/groups/add" method="post">
-    <label>Group name:</label><input type="text" name="name">
-    <input type="submit" value="Add">
+    <table class="table-form">
+        <tr>
+            <td>Group name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/groups"><button class="button-form">Back</button></a></td>
+            <td><input type="submit" value="Add" class="button-form"></td>
+        </tr>
+    </table>
 </form>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>

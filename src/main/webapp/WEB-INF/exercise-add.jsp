@@ -14,9 +14,20 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <form action="/admin/exercises/add" method="post">
-    <label>Title:</label><input type="text" name="title"><br>
-    <label>Description:</label><input type="text" name="description"><br>
-    <input type="submit" value="Add">
+    <table class="table-form">
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" name="title"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><input type="text" name="description"></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/exercises"><button class="button-form">Back</button></a></td>
+            <td><input type="submit" value="Add" class="button-form"></td>
+        </tr>
+    </table>
 </form>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>

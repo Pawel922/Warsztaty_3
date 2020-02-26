@@ -14,16 +14,34 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp"%>
 <form action="/admin/users/add" method="post">
-    <label>Name:</label><input type="text" name="name"><br>
-    <label>Email:</label><input type="text" name="email"><br>
-    <label>Password:</label><input type="text" name="password"><br>
-    <label>Group:</label>
-        <select name="group">
-            <c:forEach items="${groups}" var="group">
-                <option value="${group.getId()}">${group.getName()}</option>
-            </c:forEach>
-        </select><br>
-    <input type="submit" value="Add">
+    <table class = "table-form">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="text" name="password"></td>
+        </tr>
+        <tr>
+            <td>Group:</td>
+            <td>
+                <select name="group">
+                <c:forEach items="${groups}" var="group">
+                    <option value="${group.getId()}">${group.getName()}</option>
+                </c:forEach>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="/admin/users"><button class="button-form">Back</button></a></td>
+            <td><input type="submit" value="Add" class="button-form"></td>
+        </tr>
+    </table>
 </form>
 <%@include file="/WEB-INF/footer.jsp"%>
 </body>
