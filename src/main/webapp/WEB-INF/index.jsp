@@ -23,7 +23,11 @@
         <c:forEach items="${solutions}" var="solution">
             <tr>
                 <td>${solution.getExerciseTitle()}</td>
-                <td>${solution.getUserId()}</td>
+                <c:forEach items="${users}" var="user">
+                    <c:if test="${solution.getUserId() eq user.getId()}">
+                        <td>${user.getUserName()}</td>
+                    </c:if>
+                </c:forEach>
                 <td>${solution.getCreated()}</td>
                 <td><a href="/solution/details?id=${solution.getId()}">Details</a></td>
             </tr>
