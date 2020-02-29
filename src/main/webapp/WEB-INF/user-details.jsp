@@ -26,12 +26,14 @@
 
 <table>
     <tr>
+        <th>Title</th>
         <th>Description</th>
         <th>Date added</th>
         <th>Date updated</th>
     </tr>
     <c:forEach items="${solutions}" var="solution">
         <tr>
+            <td>${solution.getExerciseTitle()}</td>
             <td>${solution.getDescription()}</td>
             <td>${solution.getCreated()}</td>
             <td>${solution.getUpdated()}</td>
